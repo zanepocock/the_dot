@@ -48,28 +48,7 @@
            </div>​  
            
            <a data-toggle="modal" href="#SignUp" class="btn btn-primary">Sign Up</a>
-           
-           <?php if(empty($_POST) === false) {
-           		$required_fields = array('username', 'password', 'password_again', 'first_name', 'email');
-           		foreach ($_POST as $key => $value) {
-           			if (empty($value) && in_array($key, $required_fields) === true) {
-           				$errors[] = 'Fields marked with an asterisk are required.';
-           				break 1;
-           			}
-           		}
-           		
-           		if (empty($errors) === true) {
-           			if (user_exists($_POST['username']) === true) {
-           			$errors[] = 'Sorry, the username \''. $_POST['username'] .'\' is already taken.';
-           			}
-           		}
-           }
-           
-           print_r($errors);
-           
-           ?>
-           
-           
+     
            <div id="SignUp" class="modal hide fade" style="display: none; ">
                        <div class="modal-header">
                          <button class="close" data-dismiss="modal">×</button>
@@ -80,7 +59,7 @@
                          <p><a href="#SignUpTwitter" class="btn btn-primary">Sign Up With Twitter</a></p>                              
            
                          <h4>Sign Up With Username</h4>
-                         <p><form class="form-horizontal" action="" method="post">
+                         <p><form class="form-horizontal" action="register.php" method="post">
                          
                            <div class="control-group">
                              <label class="control-label" for="inputUsername">Username*:</label>

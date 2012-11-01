@@ -35,6 +35,16 @@ function user_exists($email) {
 	
 }
 
+function email_exists($username) {
+	$username = sanitize($username);
+	//return (mysql_result(mysql_query("SELECT COUNT (`user_id`) FROM `users` WHERE `email` = '$email'"), 0) == 1) ? true : false;
+	
+	$username_query = mysql_query("SELECT * FROM `users` WHERE `username` = '$username'");
+	
+	$username_num = $username_query;	
+	
+}
+
 function user_active($email) {
 	$email = sanitize($email);
 	//return (mysql_result(mysql_query("SELECT COUNT (`user_id`) FROM `users` WHERE `email` = '$email' AND `active`=1"), 0) == 1) ? true : false;	
