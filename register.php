@@ -35,12 +35,31 @@ if(empty($_POST) === false) {
 
 include 'includes/overall/header.php';
 
-if (empty($_POST) === true && empty($errors) === true) {
-	// register user
+?>
+
+<h1>Registration</h1>
+
+<?php  
+
+if (isset($_GET['success']) && empty($_GET['success'])){
+	echo 'You\'ve been registered successfully!';
 } else {
+	if (empty($_POST) === false && empty($errors) === true) {
+		$register_data = array(
+		'username' 		=> $_POST['username'], 
+		'password' 		=> $_POST['password'], 
+		'first_name' 	=> $_POST['first_name'], 
+		'last_name' 	=> $_POST['last_name'], 
+		'email' 		=> $_POST['email'], 
+	);
+	register_user($register_data);
+	header('Location: register.php?success');
+	exit();
+	
+} else if (empty($errors) === false) {
 	echo output_errors($errors);
 }
 
-include 'includes/overall/footer.php';
+}
 
-?>
+include 'includes/overall/footer.php'; ?>
