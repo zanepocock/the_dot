@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#main {
+	width: 100%;
+}
+
+#header {
+	float: right;
+	width: 100%;
+	font: 12pt cochin;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#logo {
+	float: left;
+	padding-left: 50px;
+}
+
+#mystuff {
+	float: left;
+	padding-left: 50px;
+}
+
+#mystuff ul li {
+	list-style-type: none;
+	float: left;
+	padding-left: 80px;
+}
+
+#mystuff a{
+	text-decoration: none;
+	color: #b1b1b1;
+}
+
+#mystuff a:hover {
+	color: #df8a0e;
+}
+
+#profilehome {
+	float: right;
+}
+
+#profilehome ul li {
+	list-style-type: none;
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#profilehome a {
+	text-decoration: none;
+	color: #b1b1b1;
+}
+
+#profilehome a:hover {
+	color: #df8a0e;
+}
+
+#contentleft {
+	float: left;
+	font: 15pt cochin;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#contentleft ul li {
+	list-style-type: none;
+}
+
+#contentleft a{
+	text-decoration: none;
+	color: #e8aa58;
+}
+
+#contentleft a:hover {
+	color: #df8a0e;
+}
+
+#contentright {
+	float: left;
+	padding-left: 100px;
+}
+
+#s3slider { 
+    width: 800px; /* important to be same as image width */ 
+    height: 540px; /* important to be same as image height */
+    position: relative; /* important */
+    overflow: hidden; /* important */
+    float: left;
+    padding-right: 10px;
+ }
+
+ #s3sliderContent {
+    width: 800px; /* important to be same as image width or wider */
+    position: absolute; /* important */
+    top: 0; /* important */
+    margin-left: 0;
+	padding-left: 0;
+}
+
+ .s3sliderImage {
+    float: left; /* important */
+    position: relative; /* important */
+    display: none; /* important */
+ }
+
+ .s3sliderImage span {
+    position: absolute; /* important */
+    left: 0;
+    font: 10px/15px Arial, Helvetica, sans-serif;
+    padding: 10px 13px;
+    width: 374px;
+    background-color: #000;
+    filter: alpha(opacity=0); /* here you can set the opacity of box with text */
+    -moz-opacity: 0; /* here you can set the opacity of box with text */
+    -khtml-opacity: 0; /* here you can set the opacity of box with text */
+    opacity: 0; /* here you can set the opacity of box with text */
+    color: #fff;
+    display: none; /* important */
+    top: 0;
+
+    /*
+        if you put
+        top: 0; -> the box with text will be shown at the top of the image 
+        if you put
+        bottom: 0; -> the box with text will be shown at the bottom of the image
+    */
+ }
+
+ .clear {
+    clear: both;
+ }
+ 
+ #approvedetc {
+ 	text-align: center;
+ 	float: right;
+ 	padding-left: 50px;
+ }

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {font-family:  Arial, helvetica, sans-serif; font-size: 62.5%;}  
+
+.container {width: 900px; margin: 0 auto; }  
+.containerhome {width: 880px; margin: 0 auto; }  
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, blockquote {  
+    margin:0px; padding:0px; border:0px;  
+}  
+
+#branding {  
+    overflow: hidden;  
+    margin-bottom: 30px;  
+	margin-top: 30px;
+    position: relative;  
+}  
+
+
+ul#menu {list-style: none; }  
+  
+ul#menu li a {  
+    float: left;
+	padding:  20px 45px 11px 0px; 
+    font-size: 1.1em;  
+    text-decoration: none;  
+    color: #2b2b2b;  
+    text-transform: uppercase;  
+	border-bottom: 1px solid #ababab; 
+}  
+
+ul#menu li a:hover {
+	color: #F93;
+}
+
+#branding {overflow: hidden; margin-bottom: 30px; }  
+
+#content {
+	padding-bottom: 30px;
+}
+
+#content p{font-size:1.3em;
+           padding-right:200px;
+}
+
+#artist {
+	padding-bottom: 30px;
+}
+
+#artist p{
+	font-size:1.3em;
+           padding-right:200px;
+           width: 550px;
+}
+
+#april p{
+	float: right;
+}
+
+#content ul{font-size:1.3em;
+}
+
+#content ul li a {text-decoration: none;
+                  color: #999;
+}
+
+#content ul li a:hover {
+	color: #F93;
+}
+
+#footer p {color: #fff;}  
+  
+#footer h4 {color:  #fff; font-size: 1.2em; padding-top: 0; }  
+  
+#footer ul {list-style: none; margin-left: 0; }  
+  
+#footer ul li a {text-decoration: none; color: #fff; }
+
+#footer {background: #CCC;
+	font-size: 1.2em;  
+    margin-top: 30px;  
+    padding-top: 20px;  
+    padding-bottom: 20px; 
+    overflow: hidden;
+    width: 960px;
+	margin: 0 auto;
+}
+  
+#links {float: left; width: 40%; }  
+
+#links li a:hover {
+	color: #f93;
+}
+  
+#feeds {float: left; width: 40%; } 
+
+#feeds li a:hover {
+	color: #f93;
+}
+
+#copyright {  
+    float: right;  
+    text-align: right;  
+    width: 20%;  
+}  
+
+<!--home page-->
+
+#home{
+    width: 100px
+}
+
+ul.multiple_columns li{
+        float: left;
+        list-style: none;
+        padding-right:100px;
+		padding-bottom: 30px;	
+}
+	
+	<!--I want to put a share button for each post... Hmmm how??? (http://sharethis.com/publishers/get-sharing-button#.sts.) -->
+	<!-- Also, how do I put a facebook follow button on? I can get Twitter (http://twitter.com/about/resources/followbutton)	  (http://answers.yahoo.com/question/index?qid=20090809184322AAXXEwa)-->
+	<!-- It would be cool to add this sort of flash for browsing some time (http://www.youtube.com/watch?v=hII6AbGrWR8) -->
+	<!-- For Newsletters (https://www.sailthru.com/) -->
